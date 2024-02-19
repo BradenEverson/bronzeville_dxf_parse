@@ -8,6 +8,20 @@ macro_rules! point {
             z: $y
         }
     };
+    ($x:expr, $y:expr) => {
+        Point{
+            x: $x,
+            y: $y,
+            z: 0.0
+        }
+    };
+    ($x:expr) => {
+        Point{
+            x: $x,
+            y: 0.0,
+            z: 0.0
+        }
+    };
 }
 
 #[macro_export]
