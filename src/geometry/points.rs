@@ -56,5 +56,4 @@ macro_rules! shape {
             drawing
         }
     };
-
 }
