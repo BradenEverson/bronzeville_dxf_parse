@@ -43,4 +43,18 @@ macro_rules! shape {
             drawing
         }
     };
+    ($points:expr) => {
+        {
+            let mut drawing = Drawing::new();
+            for i in 0..points.len()-1 {
+                let new_line = Line::new(points[i].clone(), points[i+1].clone());
+                drawing.add_entity(Entity::new(EntityType::Line(new_line)));
+            }
+            let new_line = Line::new(points[points.len()-1].clone(), points[0].clone());
+            drawing.add_entity(Entity::new(EntityType::Line(new_line)));
+
+            drawing
+        }
+    };
+
 }
