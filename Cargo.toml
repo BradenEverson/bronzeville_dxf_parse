@@ -1,5 +1,5 @@
 [package]
-name = "dxf-test"
+name = "cnn_dxf"
 version = "0.1.0"
 edition = "2021"
 
