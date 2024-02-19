@@ -90,13 +90,6 @@ dependencies = [
 ]
 
 [[package]]
-name = "cnn_dxf"
-version = "0.1.0"
-dependencies = [
- "dxf",
-]
-
-[[package]]
 name = "color_quant"
 version = "1.1.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -167,6 +160,13 @@ dependencies = [
  "num",
  "uuid",
  "xmltree",
+]
+
+[[package]]
+name = "dxf-model"
+version = "0.1.0"
+dependencies = [
+ "dxf",
 ]
 
 [[package]]

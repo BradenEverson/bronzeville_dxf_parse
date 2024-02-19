@@ -1,4 +1,3 @@
-use dxf::{Point, Drawing, entities::{Line, EntityType, Entity}};
 #[macro_export]
 macro_rules! point {
     ($x:expr, $y:expr, $z:expr) => {
